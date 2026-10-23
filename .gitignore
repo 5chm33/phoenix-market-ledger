@@ -1,6 +1,3 @@
-# Player-created local market observations must never be committed.
+# Player-created local data must never be committed.
 phoenix_market_ledger/data/observations.tsv
-!phoenix_market_ledger/data/.gitkeep
-# Local Ashita settings can contain machine-specific paths.
 phoenix_market_ledger/settings/settings.json
-!phoenix_market_ledger/settings/settings.example.json
