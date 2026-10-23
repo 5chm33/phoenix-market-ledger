@@ -2,7 +2,7 @@ addon.name    = 'phoenix_market_ledger';
 addon.author  = 'Phoenix Market Ledger contributors';
 addon.version = '0.1.0-review';
 addon.desc    = 'Opt-in local log of successful Auction House purchases for Phoenix staff review.';
-addon.link    = 'https://github.com/HorizonXI/PhoenixMarketLedger';
+addon.link    = 'https://github.com/5chm33/phoenix-market-ledger';
 
 require('common');
 local settings = require('settings');

@@ -22,7 +22,3 @@ The game addon writes `data/observations.tsv`. The player can voluntarily run `t
 The local row is `observedAt`, `itemId`, `side`, `priceGil`, and `evidence`. The server drops future/old data, deduplicates replays, holds all observations for review, and uses a price only after three approved same-side sales in seven days with fresh evidence under six hours old. Stack prices remain separate from individual prices; Craftbook receives a stack price only after normalizing it per item.
 
 Read [STAFF-REVIEW.md](../STAFF-REVIEW.md) before distributing or enabling this package.
-
-## Repository hygiene
-
-The collector never stores a collector key, observation TSV, player name, packet bytes, or account credential in this repository. `.gitignore` prevents player-created observations and machine-local settings from being committed.
