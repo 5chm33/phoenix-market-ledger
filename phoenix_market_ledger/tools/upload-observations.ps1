@@ -3,7 +3,7 @@ param(
     [Parameter(Mandatory = $false)]
     [string]$Endpoint = "https://horgearhunte-p5jnpha3.manus.space/api/phoenix/market-ledger/submit",
     [Parameter(Mandatory = $false)]
-    [string]$ObservationFile = (Join-Path $PSScriptRoot "..\data\observations.tsv"),
+    [string]$ObservationFile = (Join-Path (Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $PSScriptRoot))) "config\addons\phoenix_market_ledger\data\observations.tsv"),
     [Parameter(Mandatory = $false)]
     [SecureString]$CollectorToken,
     [Parameter(Mandatory = $false)]
