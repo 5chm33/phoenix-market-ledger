@@ -29,6 +29,8 @@ The addon does **not**:
 
 The optional PowerShell uploader reads the local TSV only when a player runs it. It sends only the five fields above through HTTPS using a revocable collector key. The service stores the key only as a hash. The server deduplicates submissions, accepts data only from the past seven days, and keeps every observation pending until review. Public prices and Craftbook exports require at least three **approved** observations for the same item and side, with a latest observation under six hours old.
 
+The server is also disabled by default: it rejects collector-key creation and all observation uploads until its operator explicitly enables the reviewed release after written Phoenix staff approval. This prevents the review package from becoming a live collector merely by being installed.
+
 Pending observations, one-off prices, Bazaar asks, active listings, and packet bytes never appear in public prices or Craftbook profit calculations.
 
 ## Source and verification

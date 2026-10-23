@@ -6,6 +6,8 @@ Public, complete source: https://github.com/5chm33/phoenix-market-ledger
 
 This is an opt-in community market-data collector intended to support a Phoenix-specific Craftbook profit overlay. It is disabled by default and will not be distributed for use until Phoenix approves this exact release.
 
+The receiving service also rejects collector-key creation and data uploads until the operator explicitly records written Phoenix staff approval, so the review build cannot become an unapproved live collector.
+
 The addon observes only an incoming AH success response after a player personally completes a normal Auction House purchase. It writes a local TSV containing only UTC time, item ID, single/stack side, and successful price. A separate, player-run uploader may later submit that local file to the community ledger. The addon itself has no HTTP client.
 
 It does not register an outgoing packet handler; send, inject, block, modify, replay, or construct packets; open or search the AH; bid, purchase, list, cancel, collect, or automate any AH action; inspect Bazaar data; retain character/buyer/seller names, chat, raw packet bytes, inventory, or account credentials.
