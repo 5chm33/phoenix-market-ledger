@@ -1,0 +1,5 @@
+{
+  "staff_review_approved": false,
+  "collect_successful_purchases": false,
+  "observations_file": "data\\observations.tsv"
+}

@@ -1,0 +1,9 @@
+Phoenix Market Ledger staff-review package
+Version: 0.1.0-review
+Status: review-only; not approved for Phoenix use
+Runtime: Ashita v4 + optional player-run PowerShell uploader
+Network behavior in game: none
+Packet behavior: incoming 0x04C observer only after approval and explicit player enablement
+Outgoing packet behavior: none
+Automation behavior: none
+External price-provider dependency: none
